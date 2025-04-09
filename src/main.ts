@@ -59,30 +59,8 @@ app.config.globalProperties.selectDictLabels = selectDictLabels;
 app.config.globalProperties.animate = animate;
 
 //增加FormCreate自定义组件信息
-import quotation from '@/views/workflow/form/components/quotation/Quotation.vue';
-formCreate.component('quotation', quotation);
-import techOrder from '@/views/workflow/form/components/techOrder/TechOrder.vue';
-formCreate.component('techOrder', techOrder);
-import refine from '@/views/workflow/form/components/refine/Refine.vue';
-formCreate.component('refine', refine);
-import ProjectSelect from '@/views/workflow/form/components/ProjectSelect/ProjectSelect.vue';
-formCreate.component('ProjectSelect', ProjectSelect);
-import OrderSelect from '@/views/workflow/form/components/OrderSelect/OrderSelect.vue';
-formCreate.component('OrderSelect', OrderSelect);
 import UserSelect from '@/views/workflow/form/components/UserSelect/UserSelect.vue';
 formCreate.component('UserSelect', UserSelect);
-import BusiFileUpload from '@/views/workflow/form/components/BusiFileUpload/BusiFileUpload.vue';
-formCreate.component('BusiFileUpload', BusiFileUpload);
-import BusiImageUpload from '@/views/workflow/form/components/BusiImageUpload/BusiImageUpload.vue';
-formCreate.component('BusiImageUpload', BusiImageUpload);
-import ComOnLineFile from '@/views/workflow/form/components/ComOnLineFile/ComOnLineFile.vue';
-formCreate.component('ComOnLineFile', ComOnLineFile);
-import Deliver from '@/views/workflow/form/components/Deliver/Deliver.vue';
-formCreate.component('Deliver', Deliver);
-import Bom from '@/views/workflow/form/components/Bom/Bom.vue';
-formCreate.component('Bom', Bom);
-import ExpectedDate from '@/views/workflow/form/components/ExpectedDate/ExpectedDate.vue';
-formCreate.component('ExpectedDate', ExpectedDate);
 
 app.use(ElementIcons);
 app.use(router);

@@ -23,10 +23,7 @@
 
 <script setup lang="ts">
 import variables from '@/assets/styles/variables.module.scss'
-//import logo from '@/assets/logo/logo.png'
-//import logo from '@/assets/logo/hd-logo.png'
-// import logo from '@/assets/logo/hd-logo-aw.png'
-import logo from '@/assets/logo/hd-logo-bw.png'
+import logo from '@/assets/logo/logo.png'
 import useSettingsStore from '@/store/modules/settings'
 import { ComponentInternalInstance } from "vue";
 const { proxy } = getCurrentInstance() as ComponentInternalInstance;

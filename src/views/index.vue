@@ -1,6 +1,6 @@
 <template>
   <div style="background-color: #eff1f4;margin: 10px;">
-    首页自定义
+    首页
   </div>
 </template>
 

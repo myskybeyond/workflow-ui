@@ -3,12 +3,6 @@
     <transition :enter-active-class="proxy?.animate.searchAnimate.enter" :leave-active-class="proxy?.animate.searchAnimate.leave">
       <div class="search" v-show="showSearch">
         <el-form :model="queryParams" ref="queryFormRef" :inline="true" label-width="108px">
-          <el-form-item label="项目名称" prop="projectName">
-            <el-input v-model="queryParams.projectName" placeholder="请输入项目名称" clearable style="width: 240px" @keyup.enter="handleQuery" />
-          </el-form-item>
-          <el-form-item label="销售订单名称" prop="orderName">
-            <el-input v-model="queryParams.orderName" placeholder="请输入销售订单名称" clearable style="width: 240px" @keyup.enter="handleQuery" />
-          </el-form-item>
           <el-form-item label="来源用户名称" prop="sourceUserId">
             <el-select v-model="queryParams.sourceUserId" clearable placeholder="请选择" filterable>
               <el-option v-for="user in userSelectOptions" :key="user.userId" :label="user.userName" :value="user.userId" />
@@ -39,8 +33,6 @@
     <el-card shadow="never">
       <el-table v-loading="loading" :data="smsInfoList">
         <el-table-column type="index" label="序号" width="55" align="center" />
-        <el-table-column label="项目名称" align="center" prop="projectName" show-tooltip-when-overflow />
-        <el-table-column label="销售订单名称" align="center" prop="orderName" show-tooltip-when-overflow />
         <el-table-column label="流程名称" align="center" prop="procName" show-tooltip-when-overflow />
         <el-table-column label="节点名称" align="center" prop="procNodeName" />
         <el-table-column label="来源用户名称" align="center">

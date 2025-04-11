@@ -287,7 +287,7 @@ export default {
 };
 const messageListener = {
   $type: 'flowable:TaskListener',
-  class: 'com.hdsolartech.flowable.listener.RemainUserTaskListener',
+  class: 'com.myskybeyond.flowable.listener.RemainUserTaskListener',
   event: 'create',
   listenerType: 'classListener'
 }
